@@ -23,3 +23,7 @@ result = binary_search(primes, 73)
 
 print(f"Found prime at index: {result}")
 
+num = int(input("Ente the number: "))
+
+res = binary_search(primes, num)
+print(f"Found {num} at index: {res}")
