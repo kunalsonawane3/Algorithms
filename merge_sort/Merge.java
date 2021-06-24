@@ -1,6 +1,7 @@
 import java.lang.Math;
 
 class Merge {
+  // merge method
   void mergeArr(int arr[], int p, int q, int r){
     int n1 = q - p + 1;
     int n2 = r - q;
@@ -44,6 +45,7 @@ class Merge {
     }
   }
 
+  // driver code
   public static void main(String args[]){
     int arr[] = {3, 7, 12, 14, 2, 6, 9, 11};
     Merge obj = new Merge();

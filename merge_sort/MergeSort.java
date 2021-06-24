@@ -1,4 +1,5 @@
 class MergeSort {
+  // merge function
   void merge(int arr[], int p, int q, int r){
     int n1 = q - p + 1;
     int n2 = r - q;
@@ -12,7 +13,7 @@ class MergeSort {
     for (int j=0; j < n2; j++){
       L2[j] = arr[q+1+j];
     }
-
+    // crating final array
     int i = 0; 
     int j = 0;
     int k = p;
@@ -42,6 +43,7 @@ class MergeSort {
     }
   
   }
+  // method for Merge Sort 
   void mergeSort(int arr[], int s, int e){
     if (s < e){
       int m = (s + e)/2;
@@ -50,6 +52,7 @@ class MergeSort {
       merge(arr, s, m, e);
     }
   }
+  // method for printing arra
   static void printArr(int arr[]){
     for (int i : arr){
       System.out.print(i + " ");
@@ -61,6 +64,6 @@ class MergeSort {
     MergeSort ob = new MergeSort();
     ob.mergeSort(arr, 0, arr.length-1);
     System.out.println("Array after sorting: " );
-    MergeSort.printArr(arr);
+    printArr(arr);
   }
 }
